@@ -5,8 +5,8 @@
 -- insert into myentity (id, field) values(3, 'field-3');
 -- alter sequence myentity_seq restart with 4;
 
-insert into Conta (id, nomeDono, saldo, numeroConta) values(1, 'Calebe', '1000.00', '000.000.10');
+insert into Conta (nomeDono, saldo, numeroConta) values('Calebe', '1000.00', '000.000.10');
 
-insert into Conta (id, nomeDono, saldo, numeroConta) values(2, 'Marcelo', '000.00', '000.000.50');
+insert into Conta (nomeDono, saldo, numeroConta) values('Marcelo', '000.00', '000.000.50');
 
-insert into Conta (id, nomeDono, saldo, numeroConta) values(3, 'Leonardo', '100000.00', '000.000.80');
+insert into Conta (nomeDono, saldo, numeroConta) values('Leonardo', '100000.00', '000.000.80');

@@ -1,14 +1,21 @@
 package br.unitins.model;
 
-import io.quarkus.hibernate.orm.panache.PanacheEntity;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 
 @Entity
-public class Conta extends PanacheEntity {
+public class Conta  {
+   
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String nomeDono;
     private String saldo;
     private String numeroConta;
+    
     
     
     public String getNomeDono() {
@@ -29,6 +36,14 @@ public class Conta extends PanacheEntity {
     public void setNumeroConta(String numeroConta) {
         this.numeroConta = numeroConta;
     }
+    public Long getId() {
+        return id;
+    }
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    
 
     
 }
